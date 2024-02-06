@@ -1,0 +1,85 @@
+Column Name,Display Label,Info Hint,Column Type,Is Required,Mapping Keywords,Limits
+Asset ID,Asset ID,Alphanumeric with 100 character limit,text,1,,[^a-z0-9A-Z-+_#]+
+Title,Title,Limit of 256 characters,text,1,,256 character
+event_title,event_title,,text,0,,
+description,description,Limit of 65000 characters,text,0,,65000 character
+long_description,long_description,Limit of 65000 characters,text,0,,65000 character
+tags,tags,Keywords separated by comma,text,0,,
+genre,genre,Genres separated by comma,text,0,,
+credits_name,Credits name,Names separated by comma,text,0,,
+credits_role,Credits Role,Roles separate by comma,text,0,,
+credits_character_name,Credits character name,Names separated by comma,text,0,,
+credits_position,Credits Position,Positions (Integers) separated by comma,text,0,,
+provider_name,Provider Name,,text,0,,
+provider_code,Provider Code,,text,0,,
+provider_logo,Provider Logo,,text,0,,
+provider_metadata,Provider Metadata,,text,0,,
+category,Category,Category separated by comma,text,0,,
+season,season,Numeric Value,number,0,,Integer
+episode,episode,Numeric Value,number,0,,Integer
+rating,rating,Rating of the content,text,0,,
+rating_body,rating_body,Rating body referred for Rating Value,text,0,,
+rating_country,rating_country,Rating country,text,0,,
+rating_advisories,rating advisories,Rating adviories,text,0,,
+TC IN,TC IN,"Timecode IN, Format: HH:MM:SS:FF",Regex,0,,(([0-9]){2}:){3}([0-9]){2}
+duration,duration,Format: HH:MM:SS:FF,Regex,0,,(([0-9]){2}:){3}([0-9]){2}
+tms_id,tms_id,TMS ID issued by gracenote,text,0,,
+release_date,release_date,Format: MM/DD/YYYY,Date,0,,MM/DD/YYYY
+license_start,license_start,Format: MM/DD/YYYY,Date,0,,MM/DD/YYYY
+license_end,license_end,Format: MM/DD/YYYY,Date,0,,MM/DD/YYYY
+series_title,series_title,Limit of 256 characters,text,0,,256 character
+series_id,series_id,Alpha-Numeric with 256 character limit,text,0,,256 character
+series_tms_id,series_tms_id,TMS ID issued by gracenote,text,0,,
+series_description,series_description,Limit of 65000 characters*,text,0,,65000 character
+series_long_description,series_long_description,Limit of 65000 characters*,text,0,,65000 character
+series_genre,series_genre,Genres separated by comma,text,0,,
+series_release_date,series_release_date,Format: MM/DD/YYYY,Date,0,,MM/DD/YYYY
+series_tags,series_tags,Keywords separated by comma,text,0,,
+series_category,Series Category,Category separated by comma,text,0,,
+series_rating_code,Series Rating Code,Rating of the content,text,0,,
+series_rating_provider,Series Rating Provider,Rating body referred for Rating Value,text,0,,
+series_rating_country,Series Rating Country,Rating Country,text,0,,
+series_rating_advisories,Series Rating Advisories,Rating adviories,text,0,,
+series_credits_name,Series Credits name,Names separated by comma,text,0,,
+series_credits_role,Series Credits Role,Roles separate by comma,text,0,,
+series_credits_character_name,Series Credits character name,Names separated by comma,text,0,,
+series_credits_position,Series Credits Position,Positions (Integers) separated by comma,text,0,,
+Type,Type,Movie or Episode,list,0,,"Either ""movie"" or ""episode"". Not case sensitive"
+subtitle_url_eng,subtitle_url_eng,Publicly accessible URL of the CC file,URL,0,,
+trailer_url,trailer_url,Publicly accessible URL,URL,0,,
+video_url,video_url,Publicly accessible URL,URL,0,,
+series_thumbnail_url,series_thumbnail_url,Preferred: Publicly accessible URL Supported: File name of image in Amagi S3 bucket Images/S3/,text,0,,
+series_portrait_poster_url,series_portrait_poster_url,Preferred: Publicly accessible URL Supported: File name of image in Amagi S3 bucket Images/S3/,text,0,,
+series_landscape_poster_url,series_landscape_poster_url,Preferred: Publicly accessible URL Supported: File name of image in Amagi S3 bucket Images/S3/,text,0,,
+thumbnail_url,thumbnail_url,Preferred: Publicly accessible URL Supported: File name of image in Amagi S3 bucket Images/S3/,text,0,,
+portrait_poster_url,portrait_poster_url,Preferred: Publicly accessible URL Supported: File name of image in Amagi S3 bucket Images/S3/,text,0,,
+landscape_poster_url,landscape_poster_url,Preferred: Publicly accessible URL Supported: File name of image in Amagi S3 bucket Images/S3/,text,0,,
+Cue Points,Cue Points (Mid Roll),"Cues in timecode format separated by comma HH:MM:SS:FF,HH:MM:SS:FF, offset based on TC IN",Regex,0,,"((([0-9]){2}:){3}([0-9]){2},?)"
+pre_roll,Pre Roll,"Cues in timecode format ,HH:MM:SS:FF, offset based on TC IN",Regex,0,,"((([0-9]){2}:){3}([0-9]){2},?)"
+post_roll,Post Roll,"Cues in timecode format ,HH:MM:SS:FF, offset based on TC IN",Regex,0,,"((([0-9]){2}:){3}([0-9]){2},?)"
+Segments,Segments,"Cues in timecode format separated by comma HH:MM:SS:FF,HH:MM:SS:FF, offset based on TC IN(in pairs only)",Regex,0,,"((([0-9]){2}:){3}([0-9]){2},?){2,}"
+Language,Language,3-letter language code,text,0,,3 char
+GUID,GUID,Alphanumeric with 256 character limit,text,0,,256 char
+platforms,platforms,platform seperated by comma,text,0,,
+platform_type,platform type,platform type seperated by comma,text,0,,
+season_title,season_title,Season title in english,text,0,,
+season_desc,season_desc,Season short description in english,text,0,,
+season_long_desc,season_long_desc,Series long description in english,text,0,,
+series_title_XYZ,series_title_XYZ,Series title in xyz language,text,0,,
+series_desc_XYZ,series_desc_XYZ,Series short description in xyz language,text,0,,
+series_long_desc_XYZ,series_long_desc_XYZ,Series long description in xyz language,text,0,,
+season_title_XYZ,season_title_XYZ,Season title in xyz language,text,0,,
+season_desc_XYZ,season_desc_XYZ,Season short description in xyz language,text,0,,
+season_long_desc_XYZ,season_long_desc_XYZ,Season long description in xyz language,text,0,,
+title_XYZ,title_XYZ,Title in xyz language,text,0,,
+desc_XYZ,desc_XYZ,Short description in xyz language,text,0,,
+long_desc_XYZ,long_desc_XYZ,Long description in xyz language,text,0,,
+sport_organization, sport_organization, sport_organization,text,0,,
+sport_type, sport_type, sport_type,text,0,,
+sport_event_type, sport_event_type, sport_event_type,text,0,,
+sport_venue_name, sport_venue_name, sport_venue_name,text,0,,
+sport_teams_name, sport_teams_name, sport_teams_name,text,0,,
+sport_is_home,sport_is_home,sport_is_home,text,0,,
+sport_conference,sport_conference,sport_conference,text,0,,
+sport_players_name,sport_players_name,sport_players_name,text,0,,
+sport_players_position,sport_players_position,sport_players_position,text,0,,
